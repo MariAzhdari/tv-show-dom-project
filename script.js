@@ -17,7 +17,15 @@ function makePageForEpisodes(episodeList) {
     const img = document.createElement("img");
     img.src = episode.image.medium;
     rootElem.appendChild(img);
+    //the episode's summary text
+    const summaryP = document.createElement("p");
+    summaryP.innerHTML = `${episode.summary}`
+    rootElem.appendChild(summaryP);
   });
+
+
+
+
 }
 
 window.onload = setup;
