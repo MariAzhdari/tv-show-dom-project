@@ -10,9 +10,13 @@ function makePageForEpisodes(episodeList) {
   rootElem.textContent = `Got ${episodeList.length} episode(s)`;
   //the episode's name and season number and episode number
   episodeList.forEach(episode => {
-    const p =document.createElement("p");
-    p.textContent = `S:${episode.season}-E:${episode.number}-name : ${episode.name}`
+    const p = document.createElement("p");
+    p.textContent = `S:${episode.season}-E:${episode.number}-name: ${episode.name}`
     rootElem.appendChild(p);
+    //the episode's medium-sized image
+    const img = document.createElement("img");
+    img.src = episode.image.medium;
+    rootElem.appendChild(img);
   });
 }
 
