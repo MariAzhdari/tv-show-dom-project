@@ -17,6 +17,8 @@ return `S${paddedSeason}E${paddedEpisodeNumber}`
 
 function makePageForEpisodes(episodeList) {
   const rootElem = document.getElementById("root");
+  //I add this line for when we search something in input 
+  rootElem .innerHTML ="";
   rootElem.textContent = `Got ${episodeList.length} episode(s)`;
 
   //the episode's name and season number and episode number
@@ -48,7 +50,7 @@ function makePageForEpisodes(episodeList) {
       }
      return false;
   });
-  console.log(filterEpisode);
+  makePageForEpisodes(filterEpisode);
   });
 
 window.onload = setup;
