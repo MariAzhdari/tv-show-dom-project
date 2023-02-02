@@ -37,15 +37,18 @@ function makePageForEpisodes(episodeList) {
     // other way to two line above
     rootElem.innerHTML += episode.summary;
   });
-
-  //input 
-
-
-
-
-
-
-
 }
+  //input 
+  const searchInput =document.getElementById('search-input');
+  searchInput.addEventListener("input",(event) => {
+     const searchString = event.target.value;
+     const filterEpisode =getAllEpisodes().filter((episode)=>{
+      if(episode.summary.includes(searchString) || episode.name.includes(searchString)){
+      return true;
+      }
+     return false;
+  });
+  console.log(filterEpisode);
+  });
 
 window.onload = setup;
