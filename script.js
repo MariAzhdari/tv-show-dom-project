@@ -19,7 +19,7 @@ function makePageForEpisodes(episodeList) {
   const rootElem = document.getElementById("root");
   //I add this line for when we search something in input 
   rootElem .innerHTML ="";
-  rootElem.textContent = `Got ${episodeList.length} episode(s)`;
+  rootElem.textContent = ` You Got ${episodeList.length} Episode(s)`;
 
   //the episode's name and season number and episode number
   episodeList.forEach(episode => {
@@ -43,9 +43,9 @@ function makePageForEpisodes(episodeList) {
   //input 
   const searchInput =document.getElementById('search-input');
   searchInput.addEventListener("input",(event) => {
-     const searchString = event.target.value;
+     const searchString = event.target.value.toLowerCase();
      const filterEpisode =getAllEpisodes().filter((episode)=>{
-      if(episode.summary.includes(searchString) || episode.name.includes(searchString)){
+      if(episode.summary.toLowerCase().includes(searchString) || episode.name.toLowerCase().includes(searchString)){
       return true;
       }
      return false;
