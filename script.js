@@ -51,6 +51,20 @@ function makePageForEpisodes(episodeList) {
      return false;
   });
   makePageForEpisodes(filterEpisode);
+  //select input
+
+
+
+
+
+
+
+
+
+
+
+
+
   });
 
 window.onload = setup;
