@@ -51,20 +51,55 @@ function makePageForEpisodes(episodeList) {
      return false;
   });
   makePageForEpisodes(filterEpisode);
-  //select input
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
   });
+
+  //select input 300
+
+function createOptionEpisode(episode){
+  const ShowOption =`S${("0"+episode.season)}E${("0"+episode.number)}`
+
+const optionEl = document.getElementById("episode-select");
+optionEl.text = `${ShowOption} - ${episode.name}`;
+
+return optionEl
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.onload = setup;
