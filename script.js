@@ -59,15 +59,14 @@ function makePageForEpisodes(episodeList) {
   });
   makePageForEpisodes(filterEpisode);
 
-const selectInputEl = document.getElementById("episode-select");
-selectInputEl.addEventListener("change",(e)=>{
+// const selectInputEl = document.getElementById("episode-select");
+selectEpisode.addEventListener("change",(e) => {
   const idSelector =Number(e.target.value);
   const selectEpisode =getAllEpisodes().find((ep)=>ep.id ===idSelector);
   if(selectEpisode){
     makePageForEpisodes([selectEpisode]);
   }
 });
-
 });
 
 
