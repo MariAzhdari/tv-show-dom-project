@@ -42,7 +42,8 @@ function makePageForEpisodes(episodeList) {
     rootElem.innerHTML += episode.summary;
     //add option for step 300
     const option =document.createElement('option');
-    
+    option.textContent =`${makeSeasonAndEpisodes(episode)}: ${episode.name}`
+    selectEpisode.appendChild(option);
   });
 }
   //input 
@@ -60,16 +61,7 @@ function makePageForEpisodes(episodeList) {
 
   });
 
-  //select input 300
 
-// function createOptionEpisode(episode){
-//   const ShowOption =`S${("0"+episode.season)}E${("0"+episode.number)}`
-
-// const optionEl = document.getElementById("episode-select");
-// optionEl.text = `${ShowOption} - ${episode.name}`;
-
-// return optionEl
-// };
 
 
 
