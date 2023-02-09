@@ -43,6 +43,7 @@ function makePageForEpisodes(episodeList) {
     //add option for step 300
     const option =document.createElement('option');
     option.textContent =`${makeSeasonAndEpisodes(episode)}: ${episode.name}`
+    option.value =episode.id;
     selectEpisode.appendChild(option);
   });
 }
@@ -57,46 +58,17 @@ function makePageForEpisodes(episodeList) {
      return false;
   });
   makePageForEpisodes(filterEpisode);
-  
 
-  });
+const selectInputEl = document.getElementById("episode-select");
+selectInputEl.addEventListener("change",(e)=>{
+  const idSelector =Number(e.target.value);
+  const selectEpisode =getAllEpisodes().find((ep)=>ep.id ===idSelector);
+  if(selectEpisode){
+    makePageForEpisodes([selectEpisode]);
+  }
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 window.onload = setup;
