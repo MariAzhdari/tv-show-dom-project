@@ -91,23 +91,58 @@ img:hover{
   margin: auto;
   margin-top: 2rem;
   padding: 12px;
-  background-color: rgb(52, 4, 66);
-  color: white;
-  border-radius: 5px;
-  border: none;
   font-size: 1.5rem;
   width: 75%;
   cursor: pointer;
+     background: linear-gradient(#b986d6, #88daa1);
+    border:4px solid #562d69;
+    transition: all 0.4s;
+    transition-timing-function:cubic-bezier(0.5, 3, 0, 1);
+}
+.button-remove:hover{
+    background: linear-gradient(#64e6d0, #e5c391);
+    transform: rotatex(20deg) rotateY(20deg);
 }
 
 .button-back {
-  background-color: rgb(10, 96, 96);
-  border-radius: 5px;
-  color: white;
-  font-size: 1.1rem;
+position: relative;
+  display: inline-block;
+font-size: 14px;
+  padding: 15px 30px;
+  overflow: hidden;
+  z-index: 1;
+    color: #fff;
+    background-color: #0d0d0d;
+    border: none;
+    font-weight: 600;
+ 
+ 
+  /* font-size: 1.1rem;
   padding: 14px;
   margin: auto;
-  cursor: pointer;
+  cursor: pointer; */
+}
+.button-back:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 180, 224);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.button-back:hover {
+  color: #fff;
+}
+.button-back:hover:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
 }
 
 /* Footer */
