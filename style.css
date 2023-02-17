@@ -1,5 +1,5 @@
 #root {
-  color: rgb(16, 4, 66);
+  color: rgb(13, 3, 50);
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -7,15 +7,16 @@
 /* Search bar */
 
 .search-bar-root {
-  margin: 2rem 0 2rem 0.3rem;
+  margin: 3rem 0 2rem 0.3rem;
 }
 
 .search-query {
   margin-left: 2rem;
-  width: 14rem;
+  margin-top:2rem ;
+  width: 15rem;
   padding: 14px;
-  font-size: 18px;
-  border: 1.5px solid rgb(141, 124, 124);
+  font-size: 20px;
+  border: 3px solid rgb(186, 67, 207);
   border-radius: 5px;
 }
 
