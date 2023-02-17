@@ -3,6 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+ 
+}
+body{
+  background-color: rgb(186, 182, 234);
 }
 /* Search bar */
 
@@ -16,8 +20,8 @@
   width: 15rem;
   padding: 14px;
   font-size: 20px;
-  border: 3px solid rgb(186, 67, 207);
-  border-radius: 5px;
+  border: 3px solid rgb(114, 41, 127);
+  border-radius: 10px;
 }
 
 .search-bar-root > p {
@@ -32,8 +36,8 @@
   width: 16rem;
   padding: 14px;
   font-size: 18px;
-  border: 1.5px solid black;
-  border-radius: 5px;
+   border: 3px solid rgb(114, 41, 127);
+  border-radius: 10px;
 }
 
 .select-query-show {
@@ -43,14 +47,16 @@
 /* Card body */
 .card {
   width: 30%;
-  border: 1.5px solid #000;
+  border: 3px solid rgb(114, 41, 127);
+  border-radius: 10px;
+  background-color: rgb(220, 213, 227);
   flex-grow: 1;
   min-height: 100px;
   box-sizing: border-box;
   margin: 0 5px 10px;
   justify-content: space-between;
   text-align: center;
-  border-radius: 5px;
+
 }
 
 .card > h1 {
@@ -61,18 +67,22 @@
 }
 
 .card > img {
-  border: 0.5rem solid black;
+  border: 0.5rem solid rgb(202, 163, 182);
   margin-top: 1rem;
   border-radius: 5px;
-  width: 70%;
+  width: 65%;
+}
+img:hover{
+  width:80% ;
 }
 
 .card-body > p {
   text-align: justify;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 1.2rem;
   margin-top: 1rem;
   padding: 4rem;
+  font-size: 1.2rem;
 }
 
 /* Button */
@@ -81,7 +91,7 @@
   margin: auto;
   margin-top: 2rem;
   padding: 12px;
-  background-color: rgb(28, 25, 25);
+  background-color: rgb(52, 4, 66);
   color: white;
   border-radius: 5px;
   border: none;
