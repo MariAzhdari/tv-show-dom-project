@@ -148,6 +148,7 @@ font-size: 14px;
 /* Footer */
 .footer-root {
   padding: 2rem 0;
+  font-size:2rem ;
 }
 .footer-root > p {
   margin: 1rem;
