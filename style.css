@@ -1,3 +1,26 @@
 #root {
   color: rgb(16, 4, 66);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+/* Search bar */
+
+.search-bar-root {
+  margin: 2rem 0 2rem 0.3rem;
+}
+
+.search-query {
+  margin-left: 2rem;
+  width: 14rem;
+  padding: 14px;
+  font-size: 18px;
+  border: 1.5px solid rgb(141, 124, 124);
+  border-radius: 5px;
+}
+
+.search-bar-root > p {
+  display: inline;
+  margin: 2rem;
+  padding-right: 5rem;
 }
