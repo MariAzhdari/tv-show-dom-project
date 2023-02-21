@@ -138,7 +138,7 @@ font-size: 14px;
   z-index: -1;
 }
 .button-back:hover {
-  color: #fff;
+  color: #dbd1d1;
 }
 .button-back:hover:before {
   transform: scaleX(1);
