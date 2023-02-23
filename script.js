@@ -4,6 +4,7 @@
  const paragraphEl = document.createElement("p");
  const footerLinkEl = document.createElement("a");
 
+
  paragraphEl.innerText =
    "Please note that the data has (originally) been pulled in from: ";
  footerLinkEl.setAttribute("href", "https://www.tvmaze.com/api#licensing");
@@ -11,13 +12,16 @@
  footerEl.classList.add("footer-root");
  footerLinkEl.innerText = "TV MAZE";
 
+
  footerEl.append(paragraphEl);
  paragraphEl.appendChild(footerLinkEl);
  document.body.appendChild(footerEl);
 
+
  let allEpisodes;
  let allEpisodesCounter;
  let allShows = getAllShows();
+
 
  const setup = () => {
    let renderDefaultTvShow = 167;
@@ -30,6 +34,7 @@
    });
  };
 
+ 
  // Make an API request to an end point //
  const createRequest = async (showId) => {
    const URL = `https://api.tvmaze.com/shows/${showId}/episodes`;
@@ -211,8 +216,6 @@
 
 
 
-
- 
 
 
 //______________________________________________________________________
