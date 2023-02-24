@@ -1,4 +1,4 @@
-//You can edit ALL of the code here
+//declare variables
  const rootElem = document.getElementById("root");
  const footerEl = document.createElement("footer");
  const paragraphEl = document.createElement("p");
@@ -34,7 +34,7 @@
    });
  };
 
- 
+
  // Make an API request to an end point //
  const createRequest = async (showId) => {
    const URL = `https://api.tvmaze.com/shows/${showId}/episodes`;
